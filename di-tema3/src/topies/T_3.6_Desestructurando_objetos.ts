@@ -1,5 +1,5 @@
 /*
-Descripcion: 
+Descripcion: Creamos una interfaces con ejemplos y los mostramos en pastalla, usando desestructuración
 Alumno: Gabriel Guzmán
 Fecha: 23/10/2026
 */
@@ -125,7 +125,7 @@ console.log( "Mustrar datos de manera desestricturada: \n\n" +
     "Alumno: " + nombre  + " " + apellido + 
     "\nCiclo Formativo: " + cicloFormativo + 
     "\nCentro: " + centro );
-    
+
 console.log( "--------------------------------------------------\n\n" + 
     "Alumno: " + miNombre  + " " + miApellido + 
     "\nCiclo Formativo: " + micicloFormativo + 

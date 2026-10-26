@@ -1,7 +1,21 @@
+
+//---------------------------
+// Interfaces
+//---------------------------
+
 interface Producto {
 	descripcion: string;
 	precio: number;
 }
+
+interface CalculaImpuestoOpciones {
+	impuesto: number;
+	productos: Producto[];
+}
+
+//---------------------------
+// Objetos
+//---------------------------
 
 const telefono: Producto = {
 	descripcion: 'iPhone 15 Pro',
@@ -13,10 +27,9 @@ const tablet: Producto = {
 	precio: 500
 }
 
-interface CalculaImpuestoOpciones {
-	impuesto: number;
-	productos: Producto[];
-}
+//---------------------------
+// Metodos
+//---------------------------
 
 function calculaImpuesto (opciones: CalculaImpuestoOpciones): number[] {
 	let total = 0;
@@ -35,6 +48,12 @@ const resultado = calculaImpuesto({
 	// también podemos poner por la línea anterior, ya que se llaman iguales:
 	// impuesto
 })
+
+
+//---------------------------
+// Mostrar por consola
+//---------------------------
+
 
 console.log('Total',resultado[0]);
 console.log('Impuesto',resultado[1]);

@@ -6,8 +6,10 @@ import pallo from './assets/pallo.png'
 //import './topies/t_3-4_trabajando-com-funciones.ts';
 //import './topies/04-tarea-tipos.ts';
 //import './topies/T_3.6_Desestructurando_objetos.ts';
-import './topies/T 3.8 Desestructurando Argumentos/T_3.8_Desestructurando_Argumentos.ts';
-import './topies/T 3.8 Desestructurando Argumentos/06-desest-funciones.ts';
+//import './topies/T 3.8 Desestructurando Argumentos/T_3.8_Desestructurando_Argumentos.ts';
+//import './topies/T 3.8 Desestructurando Argumentos/06-desest-funciones.ts';
+import './topies/T 3.7 Desestructurando Arrays';
+
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <section id="center">
