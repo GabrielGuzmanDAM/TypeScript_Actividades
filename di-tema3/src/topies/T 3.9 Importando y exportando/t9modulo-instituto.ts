@@ -39,15 +39,37 @@ export interface Direcion {
 //---------------------------
 
 //crearAlumno: Crea un alumno de la interfas Alumno
-export const crearAlumno = (nombre: string, edad: number, sexo: "Hombre" | "Mujer", ensenanza: Ensenanza, direccion: Direcion) : Alumno => {
+export const crearAlumno = (
+    nombre: string,
+    edad: number,
+    sexo: "Hombre" | "Mujer",
+    ensenanza: Ensenanza,
+    direccion: Direcion
+): Alumno => {
+    return { nombre, edad, sexo, ensenanza, direccion };
+};
 
-        return {
-            nombre,
-            edad,
-            sexo,
-            ensenanza,
-            direccion
-        };
+// Pide el alumno para crear el usuario
+export const pedirAlumno = (): Alumno => {
+    const nombre = prompt("Nombre:")!;
+    const edad = Number(prompt("Edad:"));
+    const sexo = prompt("Sexo (Hombre/Mujer):") as "Hombre" | "Mujer";
+
+    const ensenanza: Ensenanza = {
+        nivel: prompt("Nivel educativo:")!,
+        obligatoriedad: confirm("¿Es obligatorio?"),
+        familiaProfecional: confirm("¿Es FP?") ? "FP" : "",
+        modalidad: prompt("Modalidad (Mañana/Tarde/Telemático):") as Ensenanza["modalidad"]
+    };
+
+    const direccion: Direcion = {
+        calle: prompt("Calle:")!,
+        cp: prompt("Código postal:")!,
+        localidad: prompt("Localidad:")!,
+        provincia: prompt("Provincia:")!
+    };
+
+    return crearAlumno(nombre, edad, sexo, ensenanza, direccion);
 };
 
 //mostrarAlumno: Muestra un alumno de la interfas Alumno

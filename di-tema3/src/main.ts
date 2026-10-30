@@ -9,8 +9,8 @@ import pallo from './assets/pallo.png'
 //import './topies/T 3.8 Desestructurando Argumentos/T_3.8_Desestructurando_Argumentos.ts';
 //import './topies/T 3.8 Desestructurando Argumentos/06-desest-funciones.ts';
 //import './topies/T 3.7 Desestructurando Arrays';
-import './topies/T 3.9 Importando y exportando/t9modulo-alumnos';
-
+//import './topies/T 3.9 Importando y exportando/t9modulo-alumnos';
+import './topies/T 3.10 Trabajando con Clases/T 3.10 Trabajando con Clases.ts';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <section id="center">

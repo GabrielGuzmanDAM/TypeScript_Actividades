@@ -107,11 +107,7 @@ console.log("-----------------------");
 console.log("MATRICULAR ALUMNO");
 console.log("-----------------------");
 
-    const nombre = prompt("Nombre:")!;
-    const edad = Number(prompt("Edad:"));
-    const sexo = prompt("Sexo (Hombre/Mujer):") as "Hombre" | "Mujer";
-
-const alumno4 = metodos.crearAlumno(nombre, edad, sexo, ensenanza1, direccion1);
+const alumno4 = metodos.pedirAlumno();
 
 console.log("-----------------------");
 console.log("MOSTRAR ALUMNOS");
