@@ -5,48 +5,54 @@ export class Alumno extends Persona{
 
     private centro: string;
     private curso: string;
-    private Asignaturas : string[];
+    private asignaturas : string[];
     //-----------------------------------------
 
     constructor(centro: string,
     curso: string,
-    Asignaturas: string[]
+    asignaturas: string[],
+    nombre: string, 
+        apellido: string, 
+        edad: number, 
+        localidad: string, 
+        sexo?: "Hombre" | "Mujer"
         ) 
         {
+            
+            super(nombre, apellido, edad, localidad, sexo)
+
 
             this.centro = centro;
             this.curso = curso;
-            this.Asignaturas = Asignaturas;
-
-            super()
+            this.asignaturas = asignaturas;
         }
 
     //------------------------------------------
 
-    get centro(): string {
-        return this.nombre;
+    get getCentro(): string {
+        return this.centro;
     }
 
-    get curso(): string {
+    get getCurso(): string {
         return this.curso;
     }
 
-    get Asignaturas(): string[] {
-        return this.Asignaturas;
+    get getAsignaturas(): string[] {
+        return this.asignaturas;
     }
 
     //------------------------------------------
 
-    set centro(nuevoCentro: string) {
+    set setCentro(nuevoCentro: string) {
         this.centro = nuevoCentro;
     }
 
-    set curso(nuevoCurso: string) {
+    set setCurso(nuevoCurso: string) {
         this.curso = nuevoCurso;
     }
 
-    set Asignaturas(nuevaAsignaturas : string[]) {
-        this.Asignaturas = nuevaAsignaturas;
+    set setAsignaturas(nuevaAsignaturas : string[]) {
+        this.asignaturas = nuevaAsignaturas;
     }
 
 }

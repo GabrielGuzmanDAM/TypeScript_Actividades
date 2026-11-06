@@ -10,7 +10,11 @@ import pallo from './assets/pallo.png'
 //import './topies/T 3.8 Desestructurando Argumentos/06-desest-funciones.ts';
 //import './topies/T 3.7 Desestructurando Arrays';
 //import './topies/T 3.9 Importando y exportando/t9modulo-alumnos';
-import './topies/T 3.10 Trabajando con Clases/T 3.10 Trabajando con Clases.ts';
+//import './topies/T 3.10 Trabajando con Clases/T 3.10 Trabajando con Clases';
+//import './topies/T 3.11 Utilizar Herencia/T 3.11 Utilizar Herencia';
+import './topies/T 3.12 Herencia y Composición/T 3.12 Herencia y Composición';
+
+
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <section id="center">

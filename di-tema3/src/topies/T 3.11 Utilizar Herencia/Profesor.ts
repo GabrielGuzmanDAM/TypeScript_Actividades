@@ -8,44 +8,49 @@ export class Profesor extends Persona{
     private departamento: string;
     //-----------------------------------------
 
-    constructor(centro: string,
-    especialidad: string,
-    departamento: string
+    constructor(
+        centro: string,
+        especialidad: string,
+        departamento: string,
+        nombre: string, 
+        apellido: string, 
+        edad: number, 
+        localidad: string, 
+        sexo?: "Hombre" | "Mujer"
         ) 
         {
+            super(nombre, apellido, edad, localidad, sexo)
 
             this.centro = centro;
             this.especialidad = especialidad;
             this.departamento = departamento;
-
-            super()
         }
 
     //------------------------------------------
 
-    get centro(): string {
-        return this.nombre;
+    get getCentro(): string {
+        return this.centro;
     }
 
-    get especialidad(): string {
+    get getEspecialidad(): string {
         return this.especialidad;
     }
 
-    get departamento(): string {
+    get getDepartamento(): string {
         return this.departamento;
     }
 
     //------------------------------------------
 
-    set centro(nuevoCentro: string) {
+    set setCentro(nuevoCentro: string) {
         this.centro = nuevoCentro;
     }
 
-    set especialidad(nuevoEspecialidad: string) {
+    set setEspecialidad(nuevoEspecialidad: string) {
         this.especialidad = nuevoEspecialidad;
     }
 
-    set departamento(nuevosDepartamento: string) {
+    set setDepartamento(nuevosDepartamento: string) {
         this.departamento = nuevosDepartamento;
     }
 

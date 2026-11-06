@@ -28,45 +28,45 @@ export class Persona {
 
     //------------------------------------------
 
-    get nombre(): string {
+    get getNombre(): string {
         return this.nombre;
     }
 
-    get apellido(): string {
+    get getApellido(): string {
         return this.apellido;
     }
 
-    get edad(): number {
+    get getEdad(): number {
         return this.edad;
     }
 
-    get localidad(): string {
+    get getLocalidad(): string {
         return this.localidad;
     }
 
-    get sexo(): string {
+    get getSexo(): "Hombre" | "Mujer" | undefined  {
         return this.sexo;
     }
 
     //------------------------------------------
 
-    set nombre(nuevoNombre: string) {
+    set setNombre(nuevoNombre: string) {
         this.nombre = nuevoNombre;
     }
 
-    set apellido(nuevoApellido: string) {
+    set setApellido(nuevoApellido: string) {
         this.apellido = nuevoApellido;
     }
 
-    set edad(nuevoEdad: string) {
+    set setEdad(nuevoEdad: number) {
         this.edad = nuevoEdad;
     }
 
-    set localidad(nuevoLocalidad: string) {
+    set setLocalidad(nuevoLocalidad: string) {
         this.localidad = nuevoLocalidad;
     }
 
-    set sexo(nuevoSexo: string) {
+    set setSexo(nuevoSexo:  "Hombre" | "Mujer" | undefined) {
         this.sexo = nuevoSexo;
     }
 
